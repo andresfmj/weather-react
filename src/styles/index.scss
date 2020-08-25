@@ -1,0 +1,41 @@
+@import 'shared';
+@import 'reset';
+
+body, html {
+	font-family: $default-family-font;
+	font-size: $font-small;
+	font-weight: $font-small-weight;
+	background-color: $bg-color;
+}
+
+.brand-name {
+	font-size: 2.1rem;
+	margin: 0px .8rem;
+}
+
+.img-rounded {
+	border-radius: .3rem;
+	width: 100%;
+}
+
+.text-center {
+	text-align: center;
+}
+.text-right {
+	text-align: right;
+}
+
+.text-small {
+	font-size: .9rem;
+}
+.text-muted {
+	font-weight: $font-small-weight;
+}
+
+a {
+	text-decoration: none;
+	color: $text-links;
+	&:hover {
+		color: $text-links-hover;
+	}
+}
