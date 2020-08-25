@@ -1,10 +1,14 @@
 import React from 'react';
 
+import Weather from './containers/Weather/Weather';
+import Layout from './components/Layout/Layout';
+
+
 function App() {
 	return (
-		<div>
-			It Works! A React App!!
-		</div>
+		<Layout>
+			<Weather />
+		</Layout>
 	);
 }
 
