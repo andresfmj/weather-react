@@ -1,5 +1,6 @@
 @import 'shared';
 @import 'reset';
+@import 'weather-icons/sass/weather-icons';
 
 body, html {
 	font-family: $default-family-font;
@@ -30,6 +31,32 @@ body, html {
 }
 .text-muted {
 	font-weight: $font-small-weight;
+}
+
+.bold {
+	font-weight: $font-huge-weight;
+}
+
+.input-form {
+	display: flex;
+	flex-direction: column;
+	input {
+		margin: .2rem;
+		padding: .4rem;
+		font: inherit;
+		outline: 0;
+		border: 1px solid $primary-color;
+	}
+	button {
+		margin: .2rem;
+		padding: .4rem;
+		border-radius: .4rem;
+		background-color: $primary-color;
+		color: $secondary-color;
+		font:inherit;
+		border: none;
+		cursor: pointer;
+	}
 }
 
 a {

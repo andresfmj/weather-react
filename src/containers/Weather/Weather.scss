@@ -1,5 +1,69 @@
+@import '../../styles/shared';
+
 .Weather {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    display: flex;
     
+    .Weather-searchbar {
+        flex: 1;
+        // border: 1px solid #ccc;
+        padding: 0;
+
+    }
+
+    .Weather-results {
+        padding: .8rem;
+        flex: 4;
+
+        header {
+            margin: 1.2rem 0rem;
+            padding: .4rem 0rem;
+            border-bottom: 1px solid $secondary-text-color;
+        }
+
+        .Weather-forecast {
+
+            .Days-container {
+                
+                .Days-inner {
+                    background-color: $primary-text-color;
+                    border-radius: .8rem;
+
+                    margin: .8rem;
+                    padding: .4rem;
+                    display: flex;
+                    align-items: center;
+                    h2 {
+                        margin: .4rem .8rem;
+                    }
+                    .Days-inner-container {
+                        
+                        .Days-inner-item {
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            h3 {
+                                flex: 1;
+                                font-weight: $font-small-weight;
+                            }
+                            ul {
+                                flex: 4;
+                                
+                                li {
+                                    display: inline-block;
+                                    
+                                    background-color: $bg-color;
+                                    border-radius: .4rem;
+
+                                    margin: .6rem;
+                                    padding: .8rem;
+                                    line-height: 1.2rem;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+        }
+    }
 }
